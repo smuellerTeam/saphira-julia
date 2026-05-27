@@ -118,14 +118,22 @@ body::after {
 
 .bee-image {
   position: absolute;
-  top: 16px;
+  top: 18px;
   right: 18px;
-  width: min(170px, 22vw);
+  width: min(110px, 18vw);
   height: auto;
-  border-radius: 24px;
+  border-radius: 18px;
   border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 22px 48px rgba(0,0,0,0.12);
+  box-shadow: 0 14px 24px rgba(0,0,0,0.12);
   z-index: 2;
+}
+
+@media (max-width: 640px) {
+  .bee-image {
+    width: 90px;
+    top: 12px;
+    right: 12px;
+  }
 }
 
 .container {
