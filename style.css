@@ -25,7 +25,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-body::before {
+body:not(.home)::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -104,8 +104,9 @@ body::after {
   border-radius: 32px;
   background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(249,241,217,0.92));
   border: 1px solid var(--border);
+  border-left: 8px solid var(--accent);
   box-shadow: var(--shadow);
-  padding: 28px 28px;
+  padding: 28px 28px 28px 22px;
   transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
   backdrop-filter: blur(10px);
 }
